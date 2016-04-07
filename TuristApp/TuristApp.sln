@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuristApp", "TuristApp\TuristApp.csproj", "{78AE9517-4E02-4AE0-94BF-4331365518BB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewTuristApp", "NewTuristApp\NewTuristApp.csproj", "{8C4654C5-7EBC-49EE-8652-CBE86ADF5F7C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +11,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{78AE9517-4E02-4AE0-94BF-4331365518BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{78AE9517-4E02-4AE0-94BF-4331365518BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{78AE9517-4E02-4AE0-94BF-4331365518BB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{78AE9517-4E02-4AE0-94BF-4331365518BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{78AE9517-4E02-4AE0-94BF-4331365518BB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{78AE9517-4E02-4AE0-94BF-4331365518BB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{8C4654C5-7EBC-49EE-8652-CBE86ADF5F7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C4654C5-7EBC-49EE-8652-CBE86ADF5F7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C4654C5-7EBC-49EE-8652-CBE86ADF5F7C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8C4654C5-7EBC-49EE-8652-CBE86ADF5F7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C4654C5-7EBC-49EE-8652-CBE86ADF5F7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C4654C5-7EBC-49EE-8652-CBE86ADF5F7C}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
