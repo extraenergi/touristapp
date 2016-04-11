@@ -1,35 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:actionBarNavMode="list">
     <ImageView
         android:src="@android:drawable/ic_menu_gallery"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView1" />
     <Button
-        android:text="FAQ"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/button3" />
-    <Button
         android:text="Mina rutter"
-        android:layout_width="match_parent"
+        android:layout_width="132.5dp"
         android:layout_height="wrap_content"
         android:id="@+id/button1"
-        android:layout_margin="100dp"
-        android:textAllCaps="true"
-        android:layout_marginTop="100.0dp" />
+        android:layout_gravity="center"
+        android:layout_marginTop="123.5dp" />
     <Button
         android:text="Inställningar"
-        android:layout_width="198.5dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button2"
-        android:layout_margin="25.0dp"
-        android:layout_marginLeft="100.0dp" />
+        android:layout_gravity="center" />
+    <Button
+        android:text="FAQ"
+        android:layout_width="132.5dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:layout_gravity="center" />
     <Button
         android:text="Karta"
-        android:layout_width="match_parent"
-        android:id="@+id/button4" />
+        android:layout_width="132.5dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:layout_gravity="center" />
 </LinearLayout>
