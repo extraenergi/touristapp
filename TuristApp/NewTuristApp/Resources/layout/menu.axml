@@ -7,27 +7,30 @@
     tools:actionBarNavMode="list">
     <Button
         android:text="Mina rutter"
-        android:layout_width="132.5dp"
+        android:layout_width="306.5dp"
         android:layout_height="wrap_content"
         android:id="@+id/button1"
         android:layout_gravity="center"
         android:layout_marginTop="123.5dp" />
     <Button
         android:text="Inställningar"
-        android:layout_width="wrap_content"
+        android:layout_width="297.0dp"
         android:layout_height="wrap_content"
         android:id="@+id/button2"
-        android:layout_gravity="center" />
+        android:layout_gravity="center"
+        android:layout_marginTop="22.5dp" />
     <Button
         android:text="FAQ"
-        android:layout_width="132.5dp"
+        android:layout_width="290.5dp"
         android:layout_height="wrap_content"
         android:id="@+id/button3"
-        android:layout_gravity="center" />
+        android:layout_gravity="center"
+        android:layout_marginTop="21.0dp" />
     <Button
         android:text="Karta"
-        android:layout_width="132.5dp"
+        android:layout_width="294.5dp"
         android:layout_height="wrap_content"
         android:id="@+id/button4"
-        android:layout_gravity="center" />
+        android:layout_gravity="center"
+        android:layout_marginTop="31.5dp" />
 </LinearLayout>
