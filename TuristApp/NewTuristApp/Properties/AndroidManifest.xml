@@ -4,4 +4,5 @@
   <application android:label="NewTuristApp">
     <meta-data android:name="com.google.android.geo.AIzaSyBhQpyzeYRRCo-XeJ8nAoNttBT7_KZLSeo" android:value="AIzaSyBhQpyzeYRRCo-XeJ8nAoNttBT7_KZLSeo" />
   </application>
+  <uses_library android:name="com.google.android.map" android:required="true" />
 </manifest>
