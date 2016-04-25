@@ -6,6 +6,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 
+
 namespace NewTuristApp
 {
     [Activity(Label = "NewTuristApp", MainLauncher = true, Icon = "@drawable/icon")]

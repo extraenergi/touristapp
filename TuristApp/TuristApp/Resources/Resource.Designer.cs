@@ -80,29 +80,29 @@ namespace TuristApp
 			
 			// aapt resource value: 0x7f05000b
 			public const int editText3 = 2131034123;
-			
-			// aapt resource value: 0x7f05000d
-			public const int editText4 = 2131034125;
-			
-			// aapt resource value: 0x7f050003
-			public const int textView1 = 2131034115;
+
+            // aapt resource value: 0x7f05000d
+            public const int editText4 = 2131034125;
+
+            // aapt resource value: 0x7f050003
+            public const int textView1 = 2131034115;
 			
 			// aapt resource value: 0x7f050004
 			public const int textView2 = 2131034116;
-			
-			// aapt resource value: 0x7f050006
-			public const int textView3 = 2131034118;
-			
-			// aapt resource value: 0x7f05000c
-			public const int textView4 = 2131034124;
-			
-			// aapt resource value: 0x7f050009
-			public const int toggleButton1 = 2131034121;
-			
-			// aapt resource value: 0x7f05000a
-			public const int toggleButton2 = 2131034122;
-			
-			static Id()
+
+            // aapt resource value: 0x7f050006			
+            public const int textView3 = 2131034118;
+
+            // aapt resource value: 0x7f05000c
+            public const int textView4 = 2131034124;
+
+            // aapt resource value: 0x7f050009
+            public const int toggleButton1 = 2131034121;
+
+            // aapt resource value: 0x7f05000a
+            public const int toggleButton2 = 2131034122;
+
+            static Id()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
 			}
