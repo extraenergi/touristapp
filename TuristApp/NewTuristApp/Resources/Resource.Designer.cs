@@ -66,6 +66,9 @@ namespace NewTuristApp
 			// aapt resource value: 0x7f050000
 			public const int MyButton = 2131034112;
 			
+			// aapt resource value: 0x7f05000b
+			public const int TextSettingToggle = 2131034123;
+			
 			// aapt resource value: 0x7f050007
 			public const int button1 = 2131034119;
 			
@@ -95,6 +98,9 @@ namespace NewTuristApp
 			
 			// aapt resource value: 0x7f050003
 			public const int toggleButtonSubway = 2131034115;
+			
+			// aapt resource value: 0x7f05000c
+			public const int toggleOnline = 2131034124;
 			
 			static Id()
 			{
