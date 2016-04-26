@@ -47,6 +47,16 @@ namespace NewTuristApp
                 else
                     Toast.MakeText(this, "Text Av", ToastLength.Short).Show();
             };
+            Button fromMenuToSettingsButton = FindViewById<Button>(Resource.Id.button2);
+            fromMenuToSettingsButton.Click += (sender, e) =>
+            {
+                SetContentView(Resource.Layout.Settings);
+            };
+            Button fromMenuToMapSettingsButton = FindViewById<Button>(Resource.Id.button4);
+            fromMenuToMapSettingsButton.Click += (sender, e) =>
+              {
+                  SetContentView(Resource.Layout.MapSettings);
+              };
         }
     }
 }
