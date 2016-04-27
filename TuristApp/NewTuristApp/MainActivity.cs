@@ -28,16 +28,16 @@ namespace NewTuristApp
 
             ToggleButton onlineToggle = FindViewById<ToggleButton>(Resource.Id.toggleOnline);
 
-            onlineToggle.Click += (o, e) =>
+            /*onlineToggle.Click += (o, e) =>
             {
                 // Perform action on clicks
                 if (onlineToggle.Checked)
                     Toast.MakeText(this, "Online", ToastLength.Short).Show();
                 else
                     Toast.MakeText(this, "Offline", ToastLength.Short).Show();
-            };
+            };*/
 
-            ToggleButton textToggle = FindViewById<ToggleButton>(Resource.Id.TextSettingToggle);
+            /*ToggleButton textToggle = FindViewById<ToggleButton>(Resource.Id.TextSettingToggle);
 
             textToggle.Click += (o, e) =>
             {
@@ -46,17 +46,17 @@ namespace NewTuristApp
                     Toast.MakeText(this, "Text På", ToastLength.Short).Show();
                 else
                     Toast.MakeText(this, "Text Av", ToastLength.Short).Show();
-            };
+            };*/
             Button fromMenuToSettingsButton = FindViewById<Button>(Resource.Id.button2);
             fromMenuToSettingsButton.Click += (sender, e) =>
             {
                 SetContentView(Resource.Layout.Settings);
+                Button fromSettingsToMapSettingsButton = FindViewById<Button>(Resource.Id.button4);
+                fromSettingsToMapSettingsButton.Click += (sendere, ee) =>
+                {
+                      SetContentView(Resource.Layout.MapSettings);
+                };
             };
-            Button fromMenuToMapSettingsButton = FindViewById<Button>(Resource.Id.button4);
-            fromMenuToMapSettingsButton.Click += (sender, e) =>
-              {
-                  SetContentView(Resource.Layout.MapSettings);
-              };
         }
     }
 }

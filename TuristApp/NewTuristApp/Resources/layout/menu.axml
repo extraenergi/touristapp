@@ -32,7 +32,7 @@
         android:text="Karta"
         android:layout_width="294.5dp"
         android:layout_height="wrap_content"
-        android:id="@+id/button4"
+        android:id="@+id/button5"
         android:layout_gravity="center"
         android:layout_marginTop="31.5dp"
         android:clickable="true" />
