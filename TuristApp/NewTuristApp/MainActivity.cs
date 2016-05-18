@@ -5,6 +5,8 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Android.Util;
+using Android.Database.Sqlite;
 
 
 namespace NewTuristApp
@@ -13,7 +15,9 @@ namespace NewTuristApp
     public class MainActivity : Activity
     {
         int count = 1;
-
+        
+        Android.Database.Sqlite.SQLiteQuery[] tessa = new Android.Database.Sqlite.SQLiteQuery[1];
+        
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
