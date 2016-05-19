@@ -5,14 +5,14 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
-
+using Android.Gms.Maps;
 
 namespace NewTuristApp
 {
     [Activity(Label = "NewTuristApp", MainLauncher = true, Icon = "@drawable/icon")]
-    public class MainActivity : Activity
+    public class MainActivity : Activity, IOnMapReadyCallback
     {
-        int count = 1;
+        private GoogleMap map;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -47,6 +47,19 @@ namespace NewTuristApp
                 else
                     Toast.MakeText(this, "Text Av", ToastLength.Short).Show();
             };
+        }
+
+        private void SetUpMap()
+        {
+            if (map == null)
+            {
+                FragmentManager.FindFragmentById<MapFragment>(Resource.Id.map).GetMapAsync(this);
+            }
+        }
+
+        public void OnMapReady(GoogleMap googleMap)
+        {
+            map = googleMap;
         }
     }
 }
