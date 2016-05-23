@@ -1,8 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!--Här är jag inte helt hundra på allt som händer men vet att bland annat SHA-1 nyckeln som google kräver
+måste skrivar in för att ge tillåtelse -->
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="NewTuristApp.NewTuristApp" android:versionCode="1" android:versionName="1.0">
 	<uses-sdk android:minSdkVersion="16" />
 	<application android:label="NewTuristApp">
-		<meta-data android:name="com.google.android.geo.AIzaSyBhQpyzeYRRCo-XeJ8nAoNttBT7_KZLSeo" android:value="AIzaSyBhQpyzeYRRCo-XeJ8nAoNttBT7_KZLSeo" />
-	</application>
+		<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyDiuO9leMrBTZvfeHcPp-AX2lvfqkJksqc" />
 	<uses_library android:name="com.google.android.map" android:required="true" />
+  <user-permission Android.name="android.permission.Internet"/>
+  <user-permission Android.name="android.permission.AccessNetworkState"/>
+  <user-permission Android.name="android.permission.AccessCourseLocation"/>
+  <user-permission Android.name="android.permission.AccessFineLocation"/>
+  <user-permission Android.name="android.permission.AccessMockLocation"/>
+  <user-permission Android.name="android.permission.WriteExternalStorage"/>
+	</application>
 </manifest>

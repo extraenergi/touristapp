@@ -16,9 +16,11 @@
         android:text="Inställningar"
         android:layout_width="297.0dp"
         android:layout_height="wrap_content"
-        android:id="@+id/button2"
+        android:id="@+id/settingsButton"
         android:layout_gravity="center"
-        android:layout_marginTop="22.5dp" />
+        android:layout_marginTop="22.5dp"
+        android:clickable="true"
+        android:linksClickable="true" />
     <Button
         android:text="FAQ"
         android:layout_width="290.5dp"
@@ -30,7 +32,8 @@
         android:text="Karta"
         android:layout_width="294.5dp"
         android:layout_height="wrap_content"
-        android:id="@+id/button4"
+        android:id="@+id/mapButton"
         android:layout_gravity="center"
-        android:layout_marginTop="31.5dp" />
+        android:layout_marginTop="31.5dp"
+        android:clickable="true" />
 </LinearLayout>

@@ -10,10 +10,8 @@ using Android.Gms.Maps;
 namespace NewTuristApp
 {
     [Activity(Label = "NewTuristApp", MainLauncher = true, Icon = "@drawable/icon")]
-    public class MainActivity : Activity, IOnMapReadyCallback
-    {
-        private GoogleMap map;
-
+    public class MainActivity : Activity
+    { 
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -22,44 +20,40 @@ namespace NewTuristApp
             //SetContentView(Resource.Layout.Main);
             SetContentView(Resource.Layout.Menu);
 
-            // Get our button from the layout resource,
-            // and attach an event to it
-            Button button = FindViewById<Button>(Resource.Id.MyButton);
+            Button fromMenuToMapViewButton = FindViewById<Button>(Resource.Id.mapButton);
 
-            ToggleButton onlineToggle = FindViewById<ToggleButton>(Resource.Id.toggleOnline);
-
-            onlineToggle.Click += (o, e) =>
+            fromMenuToMapViewButton.Click += (sender, e) =>
             {
-                // Perform action on clicks
-                if (onlineToggle.Checked)
-                    Toast.MakeText(this, "Online", ToastLength.Short).Show();
-                else
-                    Toast.MakeText(this, "Offline", ToastLength.Short).Show();
+                SetContentView(Resource.Layout.MapView);
+                
+                Button fromMapViewToMenuButton = FindViewById<Button>(Resource.Id.backButton);
+
+                fromMapViewToMenuButton.Click += (senderOne, eOne) =>
+                {
+                    SetContentView(Resource.Layout.Menu);
+                };
             };
 
-            ToggleButton textToggle = FindViewById<ToggleButton>(Resource.Id.TextSettingToggle);
+            Button fromMenuToSettingsButton = FindViewById<Button>(Resource.Id.settingsButton);
 
-            textToggle.Click += (o, e) =>
+            fromMenuToSettingsButton.Click += (sender, e) =>
             {
-                // Perform action on clicks
-                if (textToggle.Checked)
-                    Toast.MakeText(this, "Text På", ToastLength.Short).Show();
-                else
-                    Toast.MakeText(this, "Text Av", ToastLength.Short).Show();
-            };
-        }
+                SetContentView(Resource.Layout.Settings);
 
-        private void SetUpMap()
-        {
-            if (map == null)
-            {
-                FragmentManager.FindFragmentById<MapFragment>(Resource.Id.map).GetMapAsync(this);
-            }
-        }
+            Button fromSettingsToMapSettingsButton = FindViewById<Button>(Resource.Id.button4);
 
-        public void OnMapReady(GoogleMap googleMap)
-        {
-            map = googleMap;
+            fromSettingsToMapSettingsButton.Click += (sendere, ee) =>
+                {
+                    SetContentView(Resource.Layout.MapSettings);
+                };
+
+            Button fromSettingsToMenuButton = FindViewById<Button>(Resource.Id.backButton);
+
+                fromSettingsToMenuButton.Click += (senderOne, eOne) =>
+             {
+                 SetContentView(Resource.Layout.Menu);
+              };
+           };
         }
     }
 }
