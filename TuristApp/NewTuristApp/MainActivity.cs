@@ -5,19 +5,13 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
-using Android.Util;
-using Android.Database.Sqlite;
-
+using Android.Gms.Maps;
 
 namespace NewTuristApp
 {
     [Activity(Label = "NewTuristApp", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
-    {
-        int count = 1;
-        
-        Android.Database.Sqlite.SQLiteQuery[] tessa = new Android.Database.Sqlite.SQLiteQuery[1];
-        
+    { 
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -26,41 +20,40 @@ namespace NewTuristApp
             //SetContentView(Resource.Layout.Main);
             SetContentView(Resource.Layout.Menu);
 
-            // Get our button from the layout resource,
-            // and attach an event to it
-            Button button = FindViewById<Button>(Resource.Id.MyButton);
+            Button fromMenuToMapViewButton = FindViewById<Button>(Resource.Id.mapButton);
 
-            ToggleButton onlineToggle = FindViewById<ToggleButton>(Resource.Id.toggleOnline);
-
-            /*onlineToggle.Click += (o, e) =>
+            fromMenuToMapViewButton.Click += (sender, e) =>
             {
-                // Perform action on clicks
-                if (onlineToggle.Checked)
-                    Toast.MakeText(this, "Online", ToastLength.Short).Show();
-                else
-                    Toast.MakeText(this, "Offline", ToastLength.Short).Show();
-            };*/
+                SetContentView(Resource.Layout.MapView);
+                
+                Button fromMapViewToMenuButton = FindViewById<Button>(Resource.Id.backButton);
 
-            /*ToggleButton textToggle = FindViewById<ToggleButton>(Resource.Id.TextSettingToggle);
+                fromMapViewToMenuButton.Click += (senderOne, eOne) =>
+                {
+                    SetContentView(Resource.Layout.Menu);
+                };
+            };
 
-            textToggle.Click += (o, e) =>
-            {
-                // Perform action on clicks
-                if (textToggle.Checked)
-                    Toast.MakeText(this, "Text På", ToastLength.Short).Show();
-                else
-                    Toast.MakeText(this, "Text Av", ToastLength.Short).Show();
-            };*/
-            Button fromMenuToSettingsButton = FindViewById<Button>(Resource.Id.button2);
+            Button fromMenuToSettingsButton = FindViewById<Button>(Resource.Id.settingsButton);
+
             fromMenuToSettingsButton.Click += (sender, e) =>
             {
                 SetContentView(Resource.Layout.Settings);
-                Button fromSettingsToMapSettingsButton = FindViewById<Button>(Resource.Id.button4);
-                fromSettingsToMapSettingsButton.Click += (sendere, ee) =>
+
+            Button fromSettingsToMapSettingsButton = FindViewById<Button>(Resource.Id.button4);
+
+            fromSettingsToMapSettingsButton.Click += (sendere, ee) =>
                 {
-                      SetContentView(Resource.Layout.MapSettings);
+                    SetContentView(Resource.Layout.MapSettings);
                 };
-            };
+
+            Button fromSettingsToMenuButton = FindViewById<Button>(Resource.Id.backButton);
+
+                fromSettingsToMenuButton.Click += (senderOne, eOne) =>
+             {
+                 SetContentView(Resource.Layout.Menu);
+              };
+           };
         }
     }
 }
