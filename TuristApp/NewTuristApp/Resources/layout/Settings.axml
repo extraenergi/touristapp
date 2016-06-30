@@ -59,6 +59,21 @@
         android:background="@drawable/ButtonStyle1"
         android:id="@+id/TextSettingToggle" />
     <ToggleButton
+        android:text="Vibration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:textSize="25sp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textColor="#ffffff"
+        android:textOn="Vibration På"
+        android:textOff="Vibration Av"
+        android:background="@drawable/ButtonStyle1"
+        android:id="@+id/toggleVibration" />
+    <ToggleButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="7"
